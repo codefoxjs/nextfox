@@ -5,7 +5,8 @@ import Link from "next/link";
 
 import { Menu, X } from "lucide-react";
 
-import { Icons } from "../shared/icons";
+import { Icons } from "@/components/shared/icons";
+import { ThemeToggle } from "@/components/shared/theme-toggle";
 
 const navigationLinks = [
   { href: "/", label: "Home" },
@@ -37,6 +38,7 @@ export function SiteHeader() {
               {link.label}
             </Link>
           ))}
+          <ThemeToggle />
         </div>
 
         {/* Mobile Menu Button */}

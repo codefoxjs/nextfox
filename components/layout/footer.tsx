@@ -1,8 +1,7 @@
 import Link from "next/link";
 
 import { buttonVariants } from "@/components/ui/button";
-
-import { Icons } from "../shared/icons";
+import { Icons } from "@/components/shared/icons";
 
 export function SiteFooter() {
   return (
