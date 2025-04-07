@@ -58,7 +58,7 @@ export function SiteHeader() {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed inset-0 z-40 bg-background/95 backdrop-blur-sm transition-all duration-300 ease-in-out md:hidden ${
+          className={`fixed inset-0 z-40 bg-background/95 backdrop-blur-xs transition-all duration-300 ease-in-out md:hidden ${
             isMobileMenuOpen ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
         >
