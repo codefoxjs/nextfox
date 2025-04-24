@@ -5,15 +5,15 @@ import { Icons } from "@/components/shared/icons";
 
 export default function Home() {
   return (
-    <main className="container flex min-h-[calc(100vh-128px)] items-center justify-center">
+    <main className="mx-auto flex min-h-[calc(100vh-128px)] max-w-screen-xl items-center justify-center">
       <div className="flex flex-col items-center gap-8 md:items-start">
         <Icons.nextjs className="w-44" />
-        <ol className="list-inside list-decimal text-center font-[family-name:var(--font-geist-mono)] text-sm sm:text-left">
-          <li className="mb-2">
+        <ol className="list-inside list-decimal text-center text-sm sm:text-left">
+          <li className="mb-2 font-mono">
             Get started by editing{" "}
-            <code className="rounded-md bg-muted">app/page.tsx</code>.
+            <code className="rounded-md bg-muted font-mono">app/page.tsx</code>.
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li className="font-mono">Save and see your changes instantly.</li>
         </ol>
 
         <div className="flex flex-col items-center gap-4 md:flex-row">

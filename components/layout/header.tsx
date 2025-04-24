@@ -20,7 +20,7 @@ export function SiteHeader() {
 
   return (
     <header className="relative h-16 w-full border-b border-border">
-      <nav className="container flex h-full items-center justify-between">
+      <nav className="mx-auto flex h-full max-w-screen-xl items-center justify-between">
         <div className="z-50">
           <Link href="/" className="text-xl font-bold">
             <Icons.nextjs className="size-16" />
