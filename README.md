@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![NextFox](public/opengraph/og-image.jpg)
 
-## Getting Started
+# NextFox - Modern Next.js Boilerplate
+
+NextFox is a modern [Next.js](https://nextjs.org) boilerplate project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), featuring a robust development setup with TypeScript, TailwindCSS, and various tools for code quality.
+
+## 🚀 Features
+
+- ⚡ **Next.js 15** with App Router
+- 🎨 **TailwindCSS** with custom configuration
+- 🌗 **Dark Mode** support using next-themes
+- 📏 **ESLint** and **Prettier** for code formatting
+- 🛠️ **TypeScript** for type safety
+- 🔍 **Husky** & **lint-staged** for Git hooks
+- 🎯 **Conventional Commits** with commitlint
+- 🎁 **Radix UI** components integration
+- 💅 **Tailwind Merge** & **clsx** for dynamic styling
+
+## 📁 Project Structure
+
+```text
+├── app/                   # Next.js app router directory
+├── components/            # Reusable UI components
+├── config/                # Configuration files
+├── lib/                   # Utility functions and shared logic
+├── public/                # Static assets
+│   ├── opengraph/         # OG images for social sharing
+│   ├── favicon/           # Favicon assets
+│   └── web-app/           # Web app assets
+├── styles/                # Global styles and Tailwind config
+└── .husky/                # Git hooks configuration
+```
+
+## 🚦 Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Install dependencies
+pnpm install
+
+# Start development server
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔧 Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `pnpm dev` - Start development server
+- `pnpm build` - Build production bundle
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
+- `pnpm lint:fix` - Fix ESLint errors
+- `pnpm typecheck` - Check TypeScript types
+- `pnpm prettier` - Format code with Prettier
 
-## Learn More
+## 📚 Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about NextFox's stack and technologies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [TailwindCSS Documentation](https://tailwindcss.com/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs)
+- [Radix UI Components](https://www.radix-ui.com/docs/primitives)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📤 Deploy
 
-## Deploy on Vercel
+Deploy your NextFox app using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
