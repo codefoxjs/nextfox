@@ -47,7 +47,7 @@ export const defaultMeta: Metadata = {
       {
         url: new URL("/opengraph/twitter-image.jpg", baseUrl).toString(),
         width: 1600,
-        height: 900,
+        height: 800,
       },
     ],
   },
