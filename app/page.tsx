@@ -5,7 +5,7 @@ import { Icons } from "@/components/shared/icons";
 
 export default function Home() {
   return (
-    <main className="mx-auto flex min-h-[calc(100vh-128px)] max-w-screen-xl items-center justify-center">
+    <main className="mx-auto flex min-h-screen container items-center justify-center">
       <div className="flex flex-col items-center gap-8 md:items-start">
         <Icons.nextjs className="w-44" />
         <ol className="list-inside list-decimal text-center text-sm sm:text-left">

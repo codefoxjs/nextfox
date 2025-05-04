@@ -19,8 +19,8 @@ export function SiteHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="relative h-16 w-full border-b border-border">
-      <nav className="mx-auto flex h-full max-w-screen-xl items-center justify-between">
+    <header className="fixed top-0 left-0 w-full z-50 bg-background border-b border-border">
+      <nav className="h-16 container mx-auto flex items-center justify-between">
         <div className="z-50">
           <Link href="/" className="text-xl font-bold">
             <Icons.nextjs className="size-16" />

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@nosecone/next':
+        specifier: 1.0.0-beta.6
+        version: 1.0.0-beta.6(next@15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       '@radix-ui/react-dropdown-menu':
         specifier: ^2.1.12
         version: 2.1.12(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -511,6 +514,12 @@ packages:
   '@nolyfill/is-core-module@1.0.39':
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
+
+  '@nosecone/next@1.0.0-beta.6':
+    resolution: {integrity: sha512-WIda5bNyUdm5M653IiPhdFuYz7to4/b/sdgZtldTrTihbiJQEq9KbpMvtAKvPSTeqn6W4y3Io/dMF5bBQie9Fw==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      next: '>=14'
 
   '@radix-ui/primitive@1.1.2':
     resolution: {integrity: sha512-XnbHrrprsNqZKQhStrSwgRUQzoCI1glLzdw79xiZPoofhGICeZRSQ3dIxAKH1gb3OHfNf4d6f+vAv3kil2eggA==}
@@ -2139,6 +2148,10 @@ packages:
       sass:
         optional: true
 
+  nosecone@1.0.0-beta.6:
+    resolution: {integrity: sha512-h+cxBMOuv8VaRwBAt9/W9+PJfgi4N7EcjHwxwl1Rf0d9cFen1zphg4qooydUnZ+9ezeBzg64xMcWFROLy4QKDg==}
+    engines: {node: '>=18'}
+
   npm-run-path@5.3.0:
     resolution: {integrity: sha512-ppwTtiJZq0O/ai0z7yfudtBpWIoxM8yE6nHi1X47eFR2EWORqfbu6CnPlNsjeN683eT0qG6H/Pyf9fCcvjnnnQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
@@ -3121,6 +3134,11 @@ snapshots:
       fastq: 1.19.1
 
   '@nolyfill/is-core-module@1.0.39': {}
+
+  '@nosecone/next@1.0.0-beta.6(next@15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
+    dependencies:
+      next: 15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      nosecone: 1.0.0-beta.6
 
   '@radix-ui/primitive@1.1.2': {}
 
@@ -4822,6 +4840,8 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
+
+  nosecone@1.0.0-beta.6: {}
 
   npm-run-path@5.3.0:
     dependencies:

@@ -6,7 +6,7 @@ import { Icons } from "@/components/shared/icons";
 export function SiteFooter() {
   return (
     <footer className="w-full border-t border-border py-4 md:h-16 md:py-0">
-      <div className="mx-auto flex h-full max-w-screen-xl flex-col gap-1 md:grid md:grid-cols-3 md:items-center md:gap-4">
+      <div className="mx-auto flex h-full container flex-col gap-1 md:grid md:grid-cols-3 md:items-center md:gap-4">
         {/* Navigation Links */}
         <nav
           className="flex items-center justify-center gap-1 md:gap-2"
