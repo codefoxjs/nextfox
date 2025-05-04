@@ -19,7 +19,7 @@ export function SiteHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-background border-b border-border">
+    <header className="fixed top-0 left-0 w-screen z-50 bg-background border-b border-border">
       <nav className="h-16 container mx-auto flex items-center justify-between">
         <div className="z-50">
           <Link href="/" className="text-xl font-bold">
