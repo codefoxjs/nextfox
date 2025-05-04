@@ -11,15 +11,8 @@ const noseconeConfig: nosecone.NoseconeOptions = {
         "'unsafe-inline'",
         "'unsafe-eval'",
       ],
-      fontSrc: [
-        "'self'",
-        "https://fonts.googleapis.com",
-      ],
       upgradeInsecureRequests: process.env.NODE_ENV === "production",
     },
-  },
-  crossOriginEmbedderPolicy: {
-    policy: "credentialless",
   },
 } as const;
 
