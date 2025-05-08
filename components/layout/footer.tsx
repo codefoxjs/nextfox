@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { defaultMeta } from "@/config/metadata";
+
 import { buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/shared/icons";
 
@@ -51,8 +53,11 @@ export function SiteFooter() {
           </div>
           <p className="text-sm text-muted-foreground md:col-start-3 md:row-start-1 md:justify-self-end">
             &copy; {new Date().getFullYear()}{" "}
-            <Link href="https://www.codefoxjs.com" className="hover:underline">
-              CodeFoxJS
+            <Link
+              href={defaultMeta.metadataBase?.href || ""}
+              className="hover:underline"
+            >
+              {(defaultMeta.title as { default: string })?.default}
             </Link>
           </p>
         </div>
